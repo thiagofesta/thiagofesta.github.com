@@ -75,6 +75,7 @@ $breakpoint-xlarge: max-width 1024px;
 $breakpoint-large: max-width 768px;
 $breakpoint-medium: max-width 640px;
 $breakpoint-small: max-width 568px;
+$breakpoint-xsmall: max-width 480px;
 
 $breakpoint-height-medium: max-height 600px;
 $breakpoint-height-small: max-height 350px;
@@ -233,6 +234,7 @@ a {
 
         @include breakpoint($breakpoint-xxlarge) {
             width: 80%;
+            padding: 0;
         }
     }
 
@@ -379,6 +381,11 @@ a {
             width: 268px;
             padding: 10px;
             text-align: center;
+
+            @include breakpoint($breakpoint-xsmall) {
+                width: 100%;
+                padding: 10px 0;
+            }
 
             .chart {
                 margin: 0 auto;
