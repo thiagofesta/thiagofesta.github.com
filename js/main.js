@@ -34,8 +34,11 @@
 
         });
 
-        // Initialize all WOW effects
-        new WOW().init();
+        // Do not render for IE 8 or less
+        if($('html.lt-ie9').length <= 0) {
+            // Initialize all WOW effects
+            //new WOW().init();
+        }
  
         var scrolled = false,
             $profileContainer = $("#cover .profile-container"),
@@ -61,9 +64,7 @@
             },
             handleProfileContainer = function() {
                 if (1 - $window.scrollTop() / 200 > -20) {
-                    $profileContainer.css({
-                        opacity: 1 - $window.scrollTop() / 500
-                    });
+                    $profileContainer.fadeTo(1, 1 - $window.scrollTop() / 500);
                 }
             };
  

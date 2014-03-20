@@ -220,6 +220,7 @@ a {
     width: 100%;
     position: absolute;
     overflow: hidden;
+    z-index: 2;
 
     .wrapper {
         margin: 0 auto;
