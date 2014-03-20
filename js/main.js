@@ -37,7 +37,7 @@
         // Do not render for IE 8 or less
         if($('html.lt-ie9').length <= 0) {
             // Initialize all WOW effects
-            //new WOW().init();
+            new WOW().init();
         }
  
         var scrolled = false,
