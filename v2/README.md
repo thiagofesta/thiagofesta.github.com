@@ -1,1 +1,0 @@
-Thiago's personal website
