@@ -426,6 +426,14 @@ a {
     background: #eeeeee;
     color: #474d5d;
 
+    a {
+        color: #474d5d;
+
+        &:hover {
+            border-bottom: 1px solid #474d5d;
+        }
+    }
+
     .resume-area {
         float: left;
         width: 280px;
@@ -480,15 +488,8 @@ a {
             line-height: 22px;
             font-weight: 300;
 
-            //@include opacity(.6);
-
             a {
-                color: #474d5d;
                 font-weight: 400;
-
-                &:hover {
-                    border-bottom: 1px solid #474d5d;
-                }
             }
         }
 
