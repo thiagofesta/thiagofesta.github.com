@@ -534,6 +534,18 @@ a {
         font-size: 11px;
         @include opacity(.7);
     }
+
+    .social {
+        a {
+            margin: 0 0 0 6px;
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+
+        
 }
 
 // Carousel Specific Styling
